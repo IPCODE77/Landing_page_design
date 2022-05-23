@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="retailer_landingpage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Retailer landing page</title>
+</head>
+
+<body class="body">
+
+    <div class="main_container">
+
+        <div class="login_box">
+            <div class="welcomebox">
+                <div class="test"> 
+                    <p id="welcome">Welcome to
+                      <span> Bazarside  </span>  </p>
+                        <div class="btn">
+                            <button id="mainsignup" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Sign up</button>
+                            <button id="mainlogin" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Log in</button>
+                        </div>
+
+                     </div>
+            </div>
+            <div class="text">
+
+                <p class="boostparagraph">Boost your Business with our service.</p>
+            </div>
+
+        </div>
+        <!-- Modal for signup -->
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" id="modalbox">
+      <div class="modal-content">
+        <div class="modal-header" style="border: none;">
+          <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+          <!-- <button type="button"  data-bs-dismiss="modal" aria-label="Close"><--Back</button> -->
+
+          <i class="fa-solid fa-circle-arrow-left" id="icon" data-bs-dismiss="modal" aria-label="Close"></i>
+          <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div> -->
+        </div>
+        <div class="modal-body">
+           <div class="containerbox">
+            <div class="row">
+              
+                <div class="col-6" id="leftcolum"><img src="shopping.png" id="shoppingimg"  alt=""></div>
+                <div class="col-6" id="rightcolum">
+                    <h2 style="text-align: center;" id="heading">Sign up</h2>
+                    <label for="username" class="form-label">Username/Seller Name</label>
+                    <input type="text" class="form-control" id="username" value="" required>
+                    <!-- <div>
+                      <p id="errorname" style="color: red;"></p>
+                    </div> -->
+
+                    <label for="useremail" class="form-label"> Email </label>
+                    <input type="email" class="form-control" id="useremail" value="" required>
+
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="Password" value="" required>
+                    <!-- <i class="fa-solid fa-eye toggleicon" id="pswtoggle" ></i> -->
+                    <i class="fa-solid fa-eye-slash toggleicon fa-eye" id="pswtoggle" ></i>
+                    <label for="confirmpsw" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmpsw" value="" required>
+                    <i class="fa-solid fa-eye-slash toggleicon fa-eye" id="confrmpswicon"></i>
+                    <div>
+                      <p id="confirmpswtext" style="color: red; margin-bottom: 0;"></p>
+                    </div>
+                  <button  id="signup_btn" type="submit">Sign up</button>
+
+                  <div class="login1">
+                      <h7>Existing user?</h7>
+                      <button id="demologin" class="targetbtn">Log in</button>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- login modal -->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" id="modalbox">
+      <div class="modal-content">
+        <div class="modal-header" style="border: none;">
+          <i class="fa-solid fa-circle-arrow-left" id="icon" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+           <div class="containerbox">
+            <div class="row">
+                <div class="col-6" id="loginleftcolum"><img src="shoppingimg2.png" id="shoppingimg2"  alt=""></div>
+                <div class="col-6" id="loginrightcolum">
+                    <h2 style="text-align: center;" id="heading">Log in</h2>
+                    <label for="loginusermail" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="loginusermail" value="" required>
+ 
+                    <label for="loginpsw" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="loginpsw" value="" required>
+                    <i class="fa-solid fa-eye-slash toggleicon fa-eye" id="logintgicon" ></i>
+                    <button  id="login_btn" type="submit">Log in</button>
+
+                <!-- <div class="anotherlogin">
+                  <div class="whitebox" id="firstline"></div>
+                  <div class="paragraph">
+                    <p>or login with</p>
+                  </div>
+                  <div class="whitebox" id="secondline"></div>
+                </div> -->
+
+               
+
+                  <!-- <div class="socialmedia">
+                    <div id="googleicon">
+                      <img src="google.png" alt="">
+                    </div>
+                    <div id="facebook">
+                      <img src="facebook.png" alt="">
+                    </div>
+                  </div> -->
+                  <a href="#" class="forgetpsw" >
+                    <p >Forget login or password?</p>
+                  </a>
+                  <div class="login1">
+                      <h7>New user? </h7>
+                      <button id="demosignup" class="targetbtn">sign up</button>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+        <div class="logo_box">
+            <img src="logo.png" id="img" alt="">
+        </div>
+    </div>
+
+   
+  
+
+
+
+
+    <div class="checkbox">
+        <p id="newtext"><span  id="wel"> Welcome to</span> 
+            <span> Bazarside  </span>  </p>
+            <div class="btn">
+                  <button data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Sign up</button>
+                  <button data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Log in</button>
+              </div>
+              
+            </div>
+           
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8749e3864a.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
